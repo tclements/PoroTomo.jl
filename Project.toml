@@ -1,0 +1,13 @@
+name = "PoroTomo"
+uuid = "69f3b469-6f36-4c96-b466-60c2cf2f0e28"
+authors = ["Tim Clements <thclements@g.harvard.edu> and contributors"]
+version = "0.1.0"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
