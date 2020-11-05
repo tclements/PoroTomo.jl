@@ -15,7 +15,9 @@ julia> using Pkg; Pkg.add(PackageSpec(url="https://github.com/tclements/PoroTomo
 
 ## Quickstart
 
-First we'll query files for a specific date-range: 
+The PoroTomo Dataset is organized by `SEG-Y/DAS{orientation}/YYYYMMDD/filename` where `orientation` is either `H` (horizontal) or `V` (vertical) and `YYYYMMDD` range between `20160308` and `20160326`. 
+
+First we'll query the available files for a specific date-range: 
 
 ```julia
 julia> using Dates, PoroTomo
