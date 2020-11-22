@@ -38,7 +38,7 @@ function get_porotomo_files(
     daterange = Date(startdate):Day(1):Date(enddate)
     for d in daterange
         datestr = Dates.format(d,"yyyymmdd")
-        path = "$filetype/DAS$orientation/$datestr/"
+        path = "DAS/$filetype/DAS$orientation/$datestr/"
         dlist = s3_list_objects("nrel-pds-porotomo",path)
         append!(filelist,dlist)
     end
